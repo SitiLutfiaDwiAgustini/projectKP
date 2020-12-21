@@ -6,6 +6,14 @@ use App\Http\Controllers\Master\VendorController;
 
 use App\Http\Controllers\Master\ProductController;
 
+use App\Http\Controllers\Master\HowtobuyController;
+
+use App\Http\Controllers\Master\AboutusController;
+
+use App\Http\Controllers\Master\EkspedisiController;
+
+use App\Http\Controllers\Master\BankController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -41,3 +49,26 @@ Route::get('product/datatable', [VendorController::class, 'datatable'])->name('p
 Route::post('master/product/store', [ProductController::class, 'store'])->name('product.store');
 
 Route::post('master/vendor/store', [VendorController::class, 'store'])->name('vendor.store');
+
+Route::get('master/howtobuy', [HowtobuyController::class, 'index'])->name('howtobuy.index');
+
+Route::get('master/howtobuy/create', [HowtobuyController::class, 'create'])->name('howtobuy.create');
+
+Route::get('howtobuy/datatable', [HowtobuyController::class, 'datatable'])->name('howtobuy.datatable');
+
+Route::post('master/howtobuy/store', [HowtobuyController::class, 'store'])->name('howtobuy.store');
+
+Route::get('master/aboutus', [AboutusController::class, 'index'])->name('aboutus.index');
+Route::get('master/aboutus/create', [AboutusController::class, 'create'])->name('aboutus.create');
+Route::get('aboutus/datatable', [AboutusController::class, 'datatable'])->name('aboutus.datatable');
+Route::post('master/aboutus/store', [AboutusController::class, 'store'])->name('aboutus.store');
+
+Route::get('master/ekspedisi', [EkspedisiController::class, 'index'])->name('ekspedisi.index');
+Route::get('master/ekspedisi/create', [EkspedisiController::class, 'create'])->name('ekspedisi.create');
+Route::get('ekspedisi/datatable', [EkspedisiController::class, 'datatable'])->name('ekspedisi.datatable');
+Route::post('master/ekspedisi/store', [EkspedisiController::class, 'store'])->name('ekspedisi.store');
+
+Route::get('master/bank', [BankController::class, 'index'])->name('bank.index');
+Route::get('master/bank/create', [BankController::class, 'create'])->name('bank.create');
+Route::get('bank/datatable', [BankController::class, 'datatable'])->name('bank.datatable');
+Route::post('master/bank/store', [BankController::class, 'store'])->name('bank.store');
