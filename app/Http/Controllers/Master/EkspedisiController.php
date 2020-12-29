@@ -17,7 +17,9 @@ class EkspedisiController extends Controller
      */
     public function index()
     {
-        return view('Ekspedisi.index');
+        
+        $ekspedisi = DB::table('ekspedisi')->get();
+        return view('Ekspedisi.index', ['ekspedisi' => $ekspedisi]);
     }
 
     /**
@@ -38,7 +40,11 @@ class EkspedisiController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        DB::table('ekspedisi')->insert([
+            'code' => $request->code,
+            'name' => $request->name
+            
+        ]);
     }
 
     /**

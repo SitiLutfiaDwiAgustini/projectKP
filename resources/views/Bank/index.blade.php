@@ -49,8 +49,14 @@
                   
                   <tfoot>
                   <tr>
-                    <th>Code</th>
-                    <th>Name Bank</th>
+                  <?php
+                    foreach ($bank as $data) {
+                        echo '<tr>';
+                        echo '<td>'.$data->code.'</td>';
+                        echo '<td>'.$data->name.'</td>';
+                        echo '</tr>';
+                    }
+                  ?>
                   </tr>
                   </tfoot>
                 </table>

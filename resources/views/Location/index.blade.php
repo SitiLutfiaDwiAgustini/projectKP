@@ -12,13 +12,13 @@
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
-                    <h1 class="m-0">Expedition</h1>
+                    <h1 class="m-0">Store Location</h1>
                     </div><!-- /.col -->
                     <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
                         <li class="breadcrumb-item">Master</li>
-                        <li class="breadcrumb-item active">Expedition</li>
+                        <li class="breadcrumb-item active">Store Location</li>
                     </ol>
                     </div><!-- /.col -->
                 </div><!-- /.row -->
@@ -33,30 +33,37 @@
             <div class="col-12">
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">Expedition List</h3>
-                <a href="{{route('ekspedisi.create')}}" class="btn btn-info btn-sm float-right" title="Create">Create</a>
+                <h3 class="card-title">Store Location List</h3>
+                <a href="{{route('location.create')}}" class="btn btn-info btn-sm float-right" title="Create">Create</a>
               </div>
               <!-- /.card-header -->
               <div class="card-body">
                 <table id="example1" class="table table-bordered table-striped" style="width: 100%;">
                   <thead>
                   <tr>
-                    <th>Code</th>
-                    <th>Name Ekspedition</th>
-                    
+                   
+                    <th>No</th>
+                    <th>Name Location</th>
+                    <th>Latitude</th>
+                    <th>Longitude</th>
+                   
                   </tr>
                   </thead>
                   
                   <tfoot>
                   <tr>
+                    
                   <?php
-                    foreach ($ekspedisi as $data) {
+                    foreach ($location as $data) {
                         echo '<tr>';
-                        echo '<td>'.$data->code.'</td>';
+                        echo '<td>'.$data->id.'</td>';
                         echo '<td>'.$data->name.'</td>';
+                        echo '<td>'.$data->latitude.'</td>';
+                        echo '<td>'.$data->longitude.'</td>';
                         echo '</tr>';
                     }
                   ?>
+                   
                   </tr>
                   </tfoot>
                 </table>

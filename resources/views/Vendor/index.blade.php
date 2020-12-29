@@ -46,18 +46,22 @@
                     <th>Contact Person</th>
                     <th>Phone No.</th>
                     <th>Status</th>
-                    <th>Action</th>
                   </tr>
                   </thead>
                   
                   <tfoot>
                   <tr>
-                    <th>Name</th>
-                    <th>Address</th>
-                    <th>Contact Person</th>
-                    <th>Phone No.</th>
-                    <th>Status</th>
-                    <th>Action</th>
+                    <?php
+                        foreach ($vendors as $data) {
+                            echo '<tr>';
+                            echo '<td>'.$data->name.'</td>';
+                            echo '<td>'.$data->address.'</td>';
+                            echo '<td>'.$data->cp.'</td>';
+                            echo '<td>'.$data->phone.'</td>';
+                            echo '<td>'.$data->status.'</td>';
+                            echo '</tr>';
+                        }
+                      ?>
                   </tr>
                   </tfoot>
                 </table>

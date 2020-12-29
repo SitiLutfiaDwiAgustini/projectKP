@@ -14,6 +14,8 @@ use App\Http\Controllers\Master\EkspedisiController;
 
 use App\Http\Controllers\Master\BankController;
 
+use App\Http\Controllers\Master\LocationController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -72,3 +74,8 @@ Route::get('master/bank', [BankController::class, 'index'])->name('bank.index');
 Route::get('master/bank/create', [BankController::class, 'create'])->name('bank.create');
 Route::get('bank/datatable', [BankController::class, 'datatable'])->name('bank.datatable');
 Route::post('master/bank/store', [BankController::class, 'store'])->name('bank.store');
+
+Route::get('master/location', [LocationController::class, 'index'])->name('location.index');
+Route::get('master/location/create', [LocationController::class, 'create'])->name('location.create');
+Route::get('location/datatable', [LocationController::class, 'datatable'])->name('location.datatable');
+Route::post('master/location/store', [LocationController::class, 'store'])->name('location.store');

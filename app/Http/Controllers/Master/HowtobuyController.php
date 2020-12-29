@@ -17,7 +17,8 @@ class HowtobuyController extends Controller
      */
     public function index()
     {
-        return view('Howtobuy.index');
+        $howtobuy = DB::table('howtobuy')->get();
+        return view('Howtobuy.index', ['howtobuy'=>$howtobuy]);
     }
 
     /**
@@ -38,7 +39,10 @@ class HowtobuyController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        DB::table('howtobuy')->insert([
+            'information' => $request->information
+
+        ]);
     }
 
     /**

@@ -6,9 +6,9 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
-use App\Models\Model\Master\Bank;
+use App\Models\Model\Master\Location;
 
-class BankController extends Controller
+class LocationController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,8 +17,8 @@ class BankController extends Controller
      */
     public function index()
     {
-        $bank = DB::table('bank')->get();
-        return view('Bank.index', ['bank' => $bank]);
+        $location = DB::table('location')->get();
+        return view('Location.index', ['location' => $location]);
     }
 
     /**
@@ -28,7 +28,7 @@ class BankController extends Controller
      */
     public function create()
     {
-        return view('Bank.create');
+        return view('Location.create');
     }
 
     /**
@@ -39,10 +39,11 @@ class BankController extends Controller
      */
     public function store(Request $request)
     {
-        DB::table('bank')->insert([
-            'code' => $request->code,
-            'name' => $request->name
-            
+        DB::table('location')->insert([
+            'id' => $request->id,
+            'name' => $request->name,
+            'latitude' => $request->latitude,
+            'longitude' => $request->longitude
         ]);
     }
 

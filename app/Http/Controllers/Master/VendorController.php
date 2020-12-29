@@ -20,7 +20,8 @@ class VendorController extends Controller
      */
     public function index()
     {
-        return view('Vendor.index');
+        $vendors = DB::table('vendors')->get();
+        return view('Vendor.index', ['vendors' => $vendors]);
     }
 
     /**

@@ -20,7 +20,9 @@ class ProductController extends Controller
      */
     public function index()
     {
-        return view('Product.index');
+      
+        $products = DB::table('products')->get();
+        return view('Product.index', ['products' => $products]);
     }
 
     /**
@@ -50,8 +52,7 @@ class ProductController extends Controller
             'purchase_price' => $request->purchasePrice,
             'selling_price' => $request->sellingPrice,
             'status' => $request->status,
-            'information' => $request->information,
-            'user_modified' => Auth::user()->id
+            'information' => $request->information
         ]);
         /*
         if($validator->fails()){

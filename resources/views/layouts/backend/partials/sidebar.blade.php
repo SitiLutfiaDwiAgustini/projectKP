@@ -73,7 +73,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="" class="nav-link {{  Request::is('master/product*') ? 'active' : ''}}">
+                <a href="{{ route('location.index') }}" class="nav-link {{  Request::is('master/location*') ? 'active' : ''}}">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Store Location</p>
                 </a>

@@ -17,7 +17,9 @@ class AboutusController extends Controller
      */
     public function index()
     {
-        return view('Aboutus.index');
+        
+        $aboutus = DB::table('aboutus')->get();
+        return view('Aboutus.index', ['aboutus' => $aboutus]);
     }
 
     /**
@@ -38,7 +40,10 @@ class AboutusController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        DB::table('aboutus')->insert([
+            'information' => $request->information
+
+        ]);
     }
 
     /**

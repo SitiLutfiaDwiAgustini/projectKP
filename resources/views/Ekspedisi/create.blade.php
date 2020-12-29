@@ -56,8 +56,8 @@
                             <label for="name" class="col-sm-4 col-form-label">Name Expedition</label>
                             <div class="col-sm-8">
                                 <select class="form-control" name="name" id="name">
-                                    <option value="Active">J&T</option>
-                                    <option value="Inactive">JNE</option>
+                                    <option value="J&T">J&T</option>
+                                    <option value="JNE">JNE</option>
                                 </select>
                             </div>
                         </div>  

@@ -46,18 +46,24 @@
                     <th>Purchase Price</th>
                     <th>Information</th>
                     <th>Status</th>
-                    <th>Action</th>
                   </tr>
                   </thead>
                   
                   <tfoot>
                   <tr>
-                    <th>Code</th>
-                    <th>Name</th>
-                    <th>Purchase Price</th>
-                    <th>Information</th>
-                    <th>Status</th>
-                    <th>Action</th>
+
+                    <?php
+                      foreach ($products as $data) {
+                          echo '<tr>';
+                          echo '<td>'.$data->code.'</td>';
+                          echo '<td>'.$data->name.'</td>';
+                          echo '<td>'.$data->purchase_price.'</td>';
+                          echo '<td>'.$data->information.'</td>';
+                          echo '<td>'.$data->status.'</td>';
+                          echo '</tr>';
+                      }
+                    ?>
+                    
                   </tr>
                   </tfoot>
                 </table>

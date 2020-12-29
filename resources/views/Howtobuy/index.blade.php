@@ -50,7 +50,13 @@
                   <tfoot>
                   <tr>
                     
-                    <th>Information</th>
+                  <?php
+                    foreach ($howtobuy as $data) {
+                        echo '<tr>';
+                        echo '<td>'.$data->information.'</td>';
+                        echo '</tr>';
+                    }
+                  ?>
                    
                   </tr>
                   </tfoot>
