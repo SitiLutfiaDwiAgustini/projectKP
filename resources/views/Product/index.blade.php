@@ -41,11 +41,16 @@
                 <table id="example1" class="table table-bordered table-striped" style="width: 100%;">
                   <thead>
                   <tr>
-                    <th>Code</th>
+                    <th>Id</th>
                     <th>Name</th>
-                    <th>Purchase Price</th>
-                    <th>Information</th>
+                    <th>Price</th>
+                    <th>Id Elektronika</th>
                     <th>Status</th>
+                    <th>Jenis</th>
+                    <th>Berat</th>
+                    <th>Gambar</th>
+                    <th>Create</th>
+                    <th>Update</th>
                   </tr>
                   </thead>
                   
@@ -55,11 +60,16 @@
                     <?php
                       foreach ($products as $data) {
                           echo '<tr>';
-                          echo '<td>'.$data->code.'</td>';
-                          echo '<td>'.$data->name.'</td>';
-                          echo '<td>'.$data->purchase_price.'</td>';
-                          echo '<td>'.$data->information.'</td>';
-                          echo '<td>'.$data->status.'</td>';
+                          echo '<td>'.$data->id.'</td>';
+                          echo '<td>'.$data->nama.'</td>';
+                          echo '<td>'.$data->harga.'</td>';
+                          echo '<td>'.$data->elektronika_id.'</td>';
+                          echo '<td>'.$data->is_ready.'</td>';
+                          echo '<td>'.$data->jenis.'</td>';
+                          echo '<td>'.$data->berat.'</td>';
+                          echo '<td>'.$data->gambar.'</td>';
+                          echo '<td>'.$data->create_at.'</td>';
+                          echo '<td>'.$data->update_at.'</td>';
                           echo '</tr>';
                       }
                     ?>

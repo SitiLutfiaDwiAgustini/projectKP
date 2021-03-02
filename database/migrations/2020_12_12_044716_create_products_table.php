@@ -14,16 +14,14 @@ class CreateProductsTable extends Migration
     public function up()
     {
         Schema::create('products', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->string('code');
-            $table->string('name');
-            $table->double('purchase_price', 10, 2);
-            $table->double('selling_price', 10, 2);
-            $table->text('information');
-            $table->integer('active');
-            $table->integer('user_modified');
-            $table->integer('stock_available')->default(0);
-            $table->integer('stock_total')->default(0);
+            $table->id();
+            $table->string('nama');
+            $table->integer('harga')->default(100000);
+            $table->integer('elektronika_id');
+            $table->boolean('is_ready')->default(true);
+            $table->string('jenis')->default('Barang Baru');
+            $table->float('berat')->default(1);
+            $table->string('gambar');
             $table->timestamps();
 
         });

@@ -40,21 +40,21 @@
                     <div class="card-body">
                     <div class="form-group row">
                         <div class="col-md-4">
-                            <label for="code" class="col-sm-6 col-form-label">Code</label>
+                            <label for="nama" class="col-sm-6 col-form-label">Nama</label>
                             <div class="col-sm-6">
-                                <input type="text" class="form-control" id="code" name="code" placeholder="Code">
+                                <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama">
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <label for="name" class="col-sm-6 col-form-label">Name</label>
+                            <label for="harga" class="col-sm-6 col-form-label">Price</label>
                             <div class="col-sm-6">
-                                <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+                                <input type="number" class="form-control" id="harga" name="harga" placeholder="Harga">
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <label for="stockAvailable" class="col-sm-6 col-form-label">Stock Available</label>
+                            <label for="eletronika_id" class="col-sm-6 col-form-label">Id Elektronika</label>
                             <div class="col-sm-6">
-                                <input type="number" class="form-control" id="stockAvailable" name="stockAvailable" placeholder="Stock Available">
+                                <input type="number" class="form-control" id="elektronika_id" name="eletronika_id" placeholder="Elektronika Id">
                             </div>
                         </div>
                         
@@ -62,16 +62,26 @@
 
                     <div class="form-group row">
                         <div class="col-md-4">
-                            <div class="col-sm-8">
-                                <input type="number" class="form-control" id="purchasePrice" name="purchasePrice" placeholder="Purchase Price">
+                            <label for="jenis" class="col-sm-6 col-form-label">Jenis</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" id="jenis" name="jenis" placeholder="Jenis">
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <label for="sellingPrice" class="col-sm-4 col-form-label">Selling Price</label>
-                            <div class="col-sm-8">
-                                <input type="number" class="form-control" id="sellingPrice" name="sellingPrice" placeholder="Selling Price">
+                            <label for="berat" class="col-sm-6 col-form-label">Berat</label>
+                            <div class="col-sm-6">
+                                <input type="number" class="form-control" id="berat" name="berat" placeholder="Berat">
                             </div>
                         </div>
+                        <div class="col-md-4">
+                            <label for="gambar" class="col-sm-6 col-form-label">Gambar</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" id="gambar" name="gambar" placeholder="Gambar">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
                         <div class="col-md-4">
                             <label for="status" class="col-sm-4 col-form-label">Status</label>
                             <div class="col-sm-8">
@@ -83,15 +93,6 @@
                         </div>  
                     </div>
 
-                    <div class="form-group row">
-                        <div class="col-md-12">
-                            <label for="info" class="col-sm-4 col-form-label">Information</label>
-                            <div class="col-sm-12">
-                                <textarea name="information" class="form-control" rows="4"></textarea>
-                            </div>
-                        </div>
-
-                    </div>
                   
                     </div>
                     <!-- /.card-body -->
