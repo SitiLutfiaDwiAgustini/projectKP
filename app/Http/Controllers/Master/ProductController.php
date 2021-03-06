@@ -46,13 +46,14 @@ class ProductController extends Controller
         
 
         DB::table('products')->insert([
-            'code' => $request->code,
-            'name' => $request->name,
-            'stock_available' => $request->stockAvailable,
-            'purchase_price' => $request->purchasePrice,
-            'selling_price' => $request->sellingPrice,
-            'status' => $request->status,
-            'information' => $request->information
+            'nama' => $request->nama,
+            'harga' => $request->harga,
+            'stock_available' => $request->stock_available,
+            'stock_total' => $request->stock_total,
+            'elektronika_id' => $request->elektronika_id,
+            'jenis' => $request->jenis,
+            'berat' => $request->berat,
+            'gambar' => $request->gambar
         ]);
         /*
         if($validator->fails()){

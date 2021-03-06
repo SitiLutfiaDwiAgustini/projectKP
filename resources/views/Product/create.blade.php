@@ -48,13 +48,13 @@
                         <div class="col-md-4">
                             <label for="harga" class="col-sm-6 col-form-label">Price</label>
                             <div class="col-sm-6">
-                                <input type="number" class="form-control" id="harga" name="harga" placeholder="Harga">
+                                <input type="text" class="form-control" id="harga" name="harga" placeholder="Harga">
                             </div>
                         </div>
                         <div class="col-md-4">
                             <label for="eletronika_id" class="col-sm-6 col-form-label">Id Elektronika</label>
                             <div class="col-sm-6">
-                                <input type="number" class="form-control" id="elektronika_id" name="eletronika_id" placeholder="Elektronika Id">
+                                <input type="text" class="form-control" id="elektronika_id" name="elektronika_id" placeholder="Elektronika Id">
                             </div>
                         </div>
                         
@@ -70,25 +70,23 @@
                         <div class="col-md-4">
                             <label for="berat" class="col-sm-6 col-form-label">Berat</label>
                             <div class="col-sm-6">
-                                <input type="number" class="form-control" id="berat" name="berat" placeholder="Berat">
+                                <input type="text" class="form-control" id="berat" name="berat" placeholder="Berat">
                             </div>
                         </div>
                         <div class="col-md-4">
                             <label for="gambar" class="col-sm-6 col-form-label">Gambar</label>
-                            <div class="col-sm-6">
-                                <input type="text" class="form-control" id="gambar" name="gambar" placeholder="Gambar">
+                            <div class="col-sm-8">
+                                <input type="file" name="gambar" class="form-control" required>
+                                <!-- <input type="file" class="form-control" id="gambar" name="gambar" placeholder="Gambar"> -->
                             </div>
                         </div>
                     </div>
 
                     <div class="form-group row">
                         <div class="col-md-4">
-                            <label for="status" class="col-sm-4 col-form-label">Status</label>
-                            <div class="col-sm-8">
-                                <select class="form-control" name="status" id="status">
-                                    <option value="Active">Active</option>
-                                    <option value="Inactive">Inactive</option>
-                                </select>
+                            <label for="stock_available" class="col-sm-6 col-form-label">Stock</label>
+                            <div class="col-sm-6">
+                                <input type="number" class="form-control" id="stock_available" name="stock_available" placeholder="Stock">
                             </div>
                         </div>  
                     </div>

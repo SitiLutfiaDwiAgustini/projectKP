@@ -12,7 +12,7 @@ class Product extends Model
     protected $table = 'products';
 
     protected $fillable = [
-        'code', 'name', 'purchase_price', 'selling_price', 'information', 'active', 'user_modified', 'stock_available', 'stock_total',
+        'nama', 'harga', 'stock_available', 'stock_total', 'elektronika_id', 'jenis', 'berat', 'gambar'
     ];
 
     public function user_modify(){

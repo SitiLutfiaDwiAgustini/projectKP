@@ -45,12 +45,10 @@
                     <th>Name</th>
                     <th>Price</th>
                     <th>Id Elektronika</th>
-                    <th>Status</th>
                     <th>Jenis</th>
                     <th>Berat</th>
                     <th>Gambar</th>
-                    <th>Create</th>
-                    <th>Update</th>
+                    <th>Stock</th>
                   </tr>
                   </thead>
                   
@@ -64,12 +62,10 @@
                           echo '<td>'.$data->nama.'</td>';
                           echo '<td>'.$data->harga.'</td>';
                           echo '<td>'.$data->elektronika_id.'</td>';
-                          echo '<td>'.$data->is_ready.'</td>';
                           echo '<td>'.$data->jenis.'</td>';
                           echo '<td>'.$data->berat.'</td>';
                           echo '<td>'.$data->gambar.'</td>';
-                          echo '<td>'.$data->create_at.'</td>';
-                          echo '<td>'.$data->update_at.'</td>';
+                          echo '<td>'.$data->stock_available.'</td>';
                           echo '</tr>';
                       }
                     ?>
