@@ -118,8 +118,12 @@
           </li>
 
 
+
+          
+
+
           <li class="nav-item menu-open">
-            <a href="#" class="nav-link active">
+            <a href="#" class="nav-link">
                 <i class="nav-icon fas fa-money-bill-wave"></i>
               <p>
                 Transaction
@@ -140,28 +144,11 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="./index2.html" class="nav-link">
+                <a href="stock" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Stock</p>
                 </a>
             </ul>
-          </li>
-
-          <li class="nav-item menu-open">
-            <a href="#" class="nav-link active">
-                <i class="nav-icon fas fa-sticky-note"></i>
-              <p>
-                Reports
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="" class="nav-link active">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Stock Reports</p>
-                </a>
-              </li>
           </li>
           
         </ul>

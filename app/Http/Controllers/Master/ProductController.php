@@ -48,7 +48,7 @@ class ProductController extends Controller
         DB::table('products')->insert([
             'nama' => $request->nama,
             'harga' => $request->harga,
-            'stock_available' => $request->stock_available,
+            'stock_available' => $request->stock_available, $request->stock_total,
             'stock_total' => $request->stock_total,
             'elektronika_id' => $request->elektronika_id,
             'jenis' => $request->jenis,

@@ -16,6 +16,10 @@ use App\Http\Controllers\Master\BankController;
 
 use App\Http\Controllers\Master\LocationController;
 
+use App\Http\Controllers\Transaction\StockController;
+
+use Illuminate\Support\Facades\Validator;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -79,3 +83,16 @@ Route::get('master/location', [LocationController::class, 'index'])->name('locat
 Route::get('master/location/create', [LocationController::class, 'create'])->name('location.create');
 Route::get('location/datatable', [LocationController::class, 'datatable'])->name('location.datatable');
 Route::post('master/location/store', [LocationController::class, 'store'])->name('location.store');
+
+
+
+
+//Warehouse
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('stock', [App\Http\Controllers\Transaction\StockController::class, 'index'])->name('index');
+Route::get('stock/print', [App\Http\Controllers\Transaction\StockController::class, 'print'])->name('print');
+Route::post('stock/update/{id}', [App\Http\Controllers\Transaction\StockController::class, 'update'])->name('stock/update');
+Route::get('stock/export', [App\Http\Controllers\Transaction\StockController::class, 'stockExport'])->name('exportstock');
+Route::get('search', [App\Http\Controllers\Transaction\StockController::class, 'search'])->name('search');
+Route::get('search2', [App\Http\Controllers\Transaction\StockController::class, 'search'])->name('search2');
+//Route::get('search3', 'StockController@search')->name('search3');
