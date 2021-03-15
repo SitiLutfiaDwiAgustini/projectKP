@@ -131,14 +131,14 @@
               </p>
             </a>
             <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="" class="nav-link active">
+               <li class="nav-item">
+                <a href="{{ route ('purchase-order.index') }}" class="nav-link {{  Request::is('transaction/purchase-order*') ? 'active' : ''}}">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Purchase Order</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="./index2.html" class="nav-link">
+                <a href="sales" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Sales Order</p>
                 </a>
